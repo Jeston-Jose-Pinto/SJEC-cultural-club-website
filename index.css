@@ -245,3 +245,13 @@ body.dark-mode {
         height: auto; /* Ensure image stays responsive */
     }
 }
+
+/* Make hr responsive */
+hr {
+    border: 2px solid #C1272D;
+    margin-top: 30px;
+    width: 90%; /* Reduce to 90% for smaller screens */
+    max-width: 100%; /* Ensure it fits within mobile screens */
+    margin-left: auto;
+    margin-right: auto;
+}
