@@ -1,0 +1,102 @@
+body {
+    font-family: 'Times New Roman', sans-serif;
+    line-height: 1.6;
+    font-size: large;
+}
+
+body .navbar {
+    background-color: #F2E6C9;
+}
+
+body.dark-mode footer {
+    background-color: #2A2A2A;
+}
+
+.event-card {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    transition: transform 0.3s ease;
+}
+
+.event-card:hover {
+    transform: translateY(-10px);
+}
+
+.event-image {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.event-details {
+    padding: 15px;
+    color: #000; /* Fixed color to black */
+}
+
+.event-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #D32F2F;
+}
+
+.event-date {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+.event-description {
+    margin-top: 10px;
+}
+
+.btn-register {
+    background-color: #D32F2F;
+    color: white;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+/* Mobile-specific adjustments */
+@media (max-width: 768px) {
+    .event-title {
+        font-size: 1.3rem;
+    }
+    
+    .event-date {
+        font-size: 1rem;
+    }
+    
+    .event-description {
+        font-size: 0.9rem;
+    }
+    
+    .event-card {
+        margin-bottom: 20px;
+    }
+}
+
+/* Dark mode styling */
+body.dark-mode {
+    background-color: #2A2A2A;
+    color: #ffffff;
+}
+
+body.dark-mode .event-card .event-details {
+    color: #000 !important; /* Ensures text inside card stays black in dark mode */
+}
+
+body.dark-mode .event-card {
+    background-color: #FAF3E0;
+    color: #ffffff;
+}
+
+body.dark-mode .event-card .event-description {
+    color: black;
+}
+
+body.dark-mode .event-card .event-date {
+    color: black;
+}
+
+body.dark-mode .navbar {
+    background-color: #333;
+}

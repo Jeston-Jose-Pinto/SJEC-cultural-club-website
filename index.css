@@ -1,0 +1,247 @@
+/* General Styles */
+body {
+    font-family: 'Times New Roman', sans-serif;
+    line-height: 1.6;
+    font-size: larger;
+    color: #343a40;
+    background-color: #FAF3E0;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+body.dark-mode {
+    background-color: #333;
+    color: #E0E0E0;
+}
+
+.fade-in-section {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in-section.is-visible {
+    opacity: 1;
+    transform: none;
+}
+
+footer {
+    background-color: #FAF3E0;
+}
+
+.hero {
+    height: 70vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+/* Box styling and hover effects */
+.box {
+    background-color: #FFF1E6;
+    padding: 20px;
+    border: 1px solid #F57C00;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out, background-color 0.3s ease;
+}
+
+.box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+    background-color: #FFDAB9;
+}
+
+/* Photo Gallery Styling */
+.gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive media queries */
+@media (max-width: 768px) {
+    .col-md-6 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero {
+        height: 50vh;
+    }
+    .box {
+        padding: 10px;
+    }
+}
+
+/* Dark Mode Styles */
+body.dark-mode .hero {
+    background-image: url('https://wallpapercave.com/wp/wp10644594.jpg');
+}
+
+body.dark-mode .box {
+    background-color: #333;
+    border: 1px solid #D32F2F;
+}
+
+body.dark-mode footer {
+    background-color: #2A2A2A;
+}
+
+body.dark-mode .gallery img:hover {
+    box-shadow: 0 15px 30px rgba(255, 255, 255, 0.3);
+}
+
+/* Dark mode icon switch */
+#darkModeToggle .fa-sun {
+    display: none;
+}
+
+body.dark-mode #darkModeToggle .fa-sun {
+    display: inline;
+}
+
+body.dark-mode #darkModeToggle .fa-moon {
+    display: none;
+}
+
+.crop-container {
+    width: 480px; /* Set your desired width here */
+    height: 300px; /* Set your desired height here */
+    overflow: hidden; /* Hide the overflow so that cropped parts don't show */
+    position: relative;
+    margin-left: 60px;
+}
+
+.crop-container img {
+    width: 100%;
+    height: 65%;
+    object-fit: cover; /* Crops the image to cover the container */
+    object-position: center; /* Optional: Adjust the position of the cropped image */
+}
+
+/* Dark Mode Styles */
+body.dark-mode .navbar {
+    background-color: #333; /* Dark background for navbar */
+}
+
+body.dark-mode .navbar-brand {
+    color: white; /* Change navbar brand text color to white */
+}
+
+body.dark-mode .navbar-nav .btn {
+    color: white; /* Change navbar buttons text color to white */
+}
+
+body.dark-mode .navbar-toggler {
+    border-color: white; /* Change toggler border color to white */
+}
+
+body.dark-mode .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255, 255, 255, 1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* Dark Mode General Styles */
+body.dark-mode {
+    background-color: #2A2A2A;
+    color: #E0E0E0;
+}
+
+.hero {
+    height: 70vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+@media (max-width: 576px) {
+    .hero {
+        height: 50vh;
+        background-size: cover;
+    }
+    .box {
+        padding: 10px;
+    }
+    .crop-container img {
+        height: 100%; /* Ensure full image height visibility */
+    }
+}
+
+@media (max-width: 768px) {
+    .col-md-6 {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+}
+
+/* Adjusting the box on smaller screens */
+.crop-container img {
+    width: 100%;
+    height: 65%;
+    object-fit: cover;
+}
+
+/* Fine-tuning photo gallery for responsiveness */
+.gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 768px) {
+    .col-md-6 {
+        margin-bottom: 20px; /* Space between sections */
+    }
+    
+    #responsibilities {
+        margin-left: 0 !important; /* Remove excess left margin */
+    }
+}
+
+@media (max-width: 768px) {
+    .col-md-6 {
+        margin-bottom: 20px; /* Space between sections */
+    }
+    
+    #objectives {
+        margin-left: 0 !important; /* Remove excess left margin */
+    }
+}
+
+@media (max-width: 768px) {
+    .col-md-6 {
+        margin-bottom: 20px; /* Space between sections */
+    }
+    
+    #objectives, #responsibilities {
+        margin-left: 0 !important; /* Remove excess left margin on smaller screens */
+        max-width: 100%; /* Ensure they take full width on smaller devices */
+    }
+    
+    .crop-container img {
+        width: 100%;
+        height: auto; /* Ensure image stays responsive */
+    }
+}

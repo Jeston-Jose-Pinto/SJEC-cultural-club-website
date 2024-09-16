@@ -1,0 +1,79 @@
+body {
+    font-family: 'Times New Roman', sans-serif;
+    line-height: 1.6;
+    font-size: larger;
+}
+
+body .navbar {
+    background-color: #F2E6C9;
+}
+
+body.dark-mode footer {
+    background-color: #2A2A2A;
+}
+
+h2 {
+    font-weight: 800;
+}
+
+.text-danger {
+    color: #D32F2F !important;
+}
+
+.rounded-circle {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.separator-line {
+    width: 1px;
+    height: 400px;
+    background-color: #D32F2F;
+    margin: 0 50px;
+}
+
+p {
+    font-weight: 400;
+    color: #6c757d;
+}
+
+h5 {
+    font-weight: 700;
+}
+
+.text-center {
+    margin-bottom: 20px;
+}
+
+.separator-line {
+    height: 2px;
+    width: 100%;
+    background-color: #C1272D;
+    margin: 20px 0;
+}
+
+.rounded-circle {
+    height: 100px;
+    width: 100px;
+}
+
+.text-danger {
+    color: #D32F2F !important;
+}
+
+.member-card {
+    margin-bottom: 30px;
+}
+
+@media (max-width: 768px) {
+    .d-flex {
+        flex-direction: column !important;
+    }
+    
+    .separator-line {
+        display: none;
+    }
+}

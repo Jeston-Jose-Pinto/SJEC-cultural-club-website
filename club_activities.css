@@ -1,0 +1,43 @@
+body {
+    font-family: 'Times New Roman', sans-serif;
+    line-height: 1.6;
+    font-size: larger;
+}
+
+body nav {
+    background-color: #F2E6C9;
+}
+
+.content-box {
+    border: 2px solid #D32F2F;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #FAF3E0;
+    margin-bottom: 20px;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+body.dark-mode .content-box {
+    background-color: #333;
+    color: #E0E0E0;
+}
+
+.gallery .col-6, .gallery .col-md-4 {
+    margin-bottom: 15px;
+}
+
+/* Responsive for mobile */
+@media (max-width: 768px) {
+    .content-box {
+        padding: 15px;
+    }
+
+    .gallery img {
+        width: 100%;
+    }
+}
