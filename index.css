@@ -55,7 +55,6 @@ footer {
 .box:hover {
     transform: translateY(-10px);
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
-    background-color: #FFDAB9;
 }
 
 /* Photo Gallery Styling */
@@ -71,18 +70,21 @@ footer {
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
 }
 
-/* Hide images beside objectives and responsibilities on mobile */
-@media (max-width: 768px) {
-    .col-md-6 img {
-        display: none; /* Hide images */
-    }
-}
-
 /* Responsive media queries */
 @media (max-width: 768px) {
     .col-md-6 {
         text-align: center;
         margin-bottom: 20px;
+    }
+
+    /* Hide crop-container on mobile */
+    .crop-container {
+        display: none; /* Hide crop-container on mobile */
+    }
+    
+    /* Adjust margins of objectives and responsibilities to avoid gaps */
+    #objectives, #responsibilities {
+        margin-bottom: 20px; /* Adjust margin as needed */
     }
 }
 
