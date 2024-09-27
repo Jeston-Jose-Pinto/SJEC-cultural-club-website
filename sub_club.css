@@ -8,6 +8,15 @@ body .navbar {
     background-color: #F2E6C9;
 }
 
+body.dark-mode {
+    background-color: #2A2A2A;
+    color: white;
+}
+
+body.dark-mode .navbar {
+    background-color: #333;
+}
+
 body.dark-mode footer {
     background-color: #2A2A2A;
 }
@@ -37,7 +46,10 @@ h2 {
 
 p {
     font-weight: 400;
-    color: #6c757d;
+}
+
+body.dark-mode p {
+    color: #cccccc;
 }
 
 h5 {
@@ -66,6 +78,22 @@ h5 {
 
 .member-card {
     margin-bottom: 30px;
+}
+
+/* Light Mode - Text Color Black */
+.content-box {
+    border: 2px solid #D32F2F;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #FAF3E0;
+    margin-bottom: 20px;
+    color: black; /* Text color in light mode */
+}
+
+/* Dark Mode - Text Color White */
+body.dark-mode .content-box {
+    background-color: #333;
+    color: white; /* Text color in dark mode */
 }
 
 @media (max-width: 768px) {
