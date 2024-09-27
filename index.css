@@ -71,6 +71,13 @@ footer {
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
 }
 
+/* Hide images beside objectives and responsibilities on mobile */
+@media (max-width: 768px) {
+    .col-md-6 img {
+        display: none; /* Hide images */
+    }
+}
+
 /* Responsive media queries */
 @media (max-width: 768px) {
     .col-md-6 {
